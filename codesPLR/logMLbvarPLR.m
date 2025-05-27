@@ -176,7 +176,7 @@ if mn~=0
         
         % normalizing constant
         norm = - n*Td*log(pi)/2 + sum(gammaln((Td+d-[0:n-1])/2)-gammaln((d-[0:n-1])/2)) +...
-            - Td*sum(log(psi))/2 - n*sum(log(eigaaa))/2 - (T+d)*sum(log(eigbbb))/2;
+            - Td*sum(log(psi))/2 - n*sum(log(eigaaa))/2 - (Td+d)*sum(log(eigbbb))/2;
         
         logML=logML-norm;
     end
